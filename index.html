@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>poo</title>
+</head>
+<body>
+
+<input type="button" value="ajouter" onclick="addMarq()">
+<label><input type="text" id="marque1"></label>
+
+<ul id = "marqlist"></ul>
+<button onclick="console.log(marques);">Debug</button>
+
+<!--
+<table>
+    <tr>
+        <th> Marque </th>
+        <th> produits </th>
+        <th> prix </th>
+        <th> qté </th>
+    </tr>
+</table>
+-->
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+<script>
+
+var marques = [];
+
+function nvlMarques(nouveauNom){
+    this.nom = nouveauNom;
+    this.marques = [];
+}
+
+function addMarq() {
+    nouveauNom = document.getElementById("marque1").value;
+    marques.push(nouveauNom);
+    //nouvellePuce = '<li>'+nvlMarques('')+'</li>';
+//    $('#monUL').append(nouvellePuce);
+    console.log(nouveauNom);
+}
+
+
+
+// $('#monBouton').click(maFonction1);
+// $("body").css('background-color','red'); chge bg
+
+</script>
+
+</body>
+</html>
